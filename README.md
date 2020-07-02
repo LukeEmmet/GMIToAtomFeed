@@ -81,10 +81,15 @@ Alternatively the script could be extended to programmatically look up this info
 
 My own Gemini site on MarmaladeFoo uses this script to generate its Atom feed. 
 
-*Note these are not web links, but a Gemini link - you will need a Gemini client (why not try https://github.com/LukeEmmet/GemiNaut)*
+*Note these are not web urls, but a Gemini ones - you will need a Gemini client (why not try https://github.com/LukeEmmet/GemiNaut)*
 
-[Human readable blog index (GMI)](gemini://gemini.marmaladefoo.com/blog/index.gmi ) 
-[Generated Atom feed](gemini://gemini.marmaladefoo.com/cgi-bin/atom-feed.cgi?lukee)
+Human readable blog index (GMI):
+
+* gemini://gemini.marmaladefoo.com/blog/index.gmi  
+
+Corresponding live generated Atom feed:
+
+* gemini://gemini.marmaladefoo.com/cgi-bin/atom-feed.cgi?lukee 
 
 ## Installation/Source
 
