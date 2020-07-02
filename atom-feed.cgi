@@ -135,6 +135,7 @@ print rejoin [
         <name>} (markup-escape user/author-name) {</name>
         <email>} (markup-escape user/author-email) {</email>
     </author>
+    <generator uri="https://github.com/LukeEmmet/GMIToAtomFeed">GMIToAtomFeed</generator>
 }
 
 ]
