@@ -40,7 +40,10 @@ users: context [
 
 
 default-user: "lukee"       ;if none provided
-this-url: "gemini://raspberrypi/cgi-bin/feed.cgi"
+
+this-url: "gemini://gemini.marmaladefoo.com/cgi-bin/atom-feed.cgi"
+
+
 
 
 ;___________no need to change below here____________
@@ -82,6 +85,11 @@ date-to-rfc3339: funct [date timezone] [
     ]
 ]
 
+title-case: funct [text] [
+   join (uppercase first text) (next text)
+]
+
+
 foreach line read/lines user/gemlog-path [    
     words: parse/all line " "
     
@@ -100,11 +108,10 @@ foreach line read/lines user/gemlog-path [
                             
                 new-post: make post []
                 
-                new-post/title:  trim reform parse/all title " _-"
+                new-post/title:   title-case trim reform parse/all title " _-"
                 new-post/link: join user/base-url link
-                new-post/updated:  date-to-rfc3339 post-date  user/timezone
+                new-post/updated:  date-to-rfc3339 post-date user/timezone
                 
-                ;rfc3339 format is 2020-05-27T00:30:02-07:00
                 if post-date > last-updated [last-updated: post-date]   ;assumes at least one valid entry!
                 append/only posts new-post
                 
