@@ -28,7 +28,7 @@ Heading 1 becomes the blog title
 # My blog title
 ```
 
-The list of links are scanned, and those that have a display text of the form "date<space>title" are taken as blog entries. Any other links are ignored.
+The list of links are scanned, and those that have a display text of the form "date\<space\>title" are taken as blog entries. Any other links are ignored.
 
 ```
 => secondpost.gmi 2020-7-1 My second blog post
