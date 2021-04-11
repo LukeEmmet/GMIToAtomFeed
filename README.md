@@ -2,6 +2,9 @@
 
 A CGI script to generate an Atom feed for your Gemini log by parsing your gemlog index summary
 
+Update: GMI feed subscription is now a companion specification for Gemini: gemini://gemini.circumlunar.space/docs/companion/subscription.gmi
+
+
 # GMI based feed generator
 
 The convention for blog/gemlog feeds seems to be Atom+XML, and looking round at the options for generating these there is a python script and writing them by hand.
@@ -94,3 +97,10 @@ Corresponding live generated Atom feed:
 ## Installation/Source
 
 You will need Rebol on your machine, and a CGI compatible Gemini server.
+
+# See also
+
+* Michael Bays' C program gmisub2atom: gemini://gemini.thegonz.net/gmisub2atom/
+* GMI feed companion specification: gemini://gemini.circumlunar.space/docs/companion/subscription.gmi
+
+
